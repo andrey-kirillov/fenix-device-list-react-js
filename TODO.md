@@ -1,0 +1,1 @@
+- extract repo name to a var
