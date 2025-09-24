@@ -8,19 +8,22 @@ const rows = [
 ];
 
 const columns = [
-    { field: 'id', headerName: '#', width: 100 },
-    { field: 'name', headerName: 'Name', flex: 1 },
-    { field: 'serialNumber', headerName: 'Serial Number', flex: 1 },
-    { field: 'soldDate', headerName: 'Sold Date', flex: 1 },
-    { field: 'soldPrice', headerName: 'Sold Price', flex: 1 },
-    { field: 'soldBy', headerName: 'Sold By', flex: 1 },
+    { field: 'id', headerName: '#', width: 100, minWidth: 50, },
+    { field: 'name', headerName: 'Name', flex: 1, minWidth: 200 },
+    { field: 'serialNumber', headerName: 'Serial Number', flex: 1, minWidth: 200 },
+    { field: 'soldDate', headerName: 'Sold Date', flex: 1, minWidth: 200 },
+    { field: 'soldPrice', headerName: 'Sold Price', flex: 1, minWidth: 200 },
+    { field: 'soldBy', headerName: 'Sold By', flex: 1, minWidth: 200 },
 ];
 
 function SoldDeviceList() {
     return (
         <Fragment>
             <div style={{ textAlign: 'center', padding: '20px' }}>Test filter and sorting</div>
-            <DataGrid rows={rows} columns={columns} />
+            <DataGrid 
+                rows={rows} 
+                columns={columns}
+            />
         </Fragment>
     )
 }
