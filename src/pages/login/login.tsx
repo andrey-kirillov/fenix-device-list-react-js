@@ -8,7 +8,7 @@ import TextField from '@mui/material/TextField';
 
 function LoginPage() {
   return (
-    <Box>
+    <Box display="flex" justifyContent="center" alignItems="center" height="100vh" width="100vw">
         <Card sx={{ maxWidth: 345 }}>
             <CardHeader title="Login" slotProps={{ title: { style: { textAlign: 'left' } } }} />
             <CardContent>   
@@ -16,7 +16,7 @@ function LoginPage() {
                 <TextField fullWidth label="Password" type="password" margin="normal" />
             </CardContent>
             <CardActions>
-                <Button fullWidth variant="contained">Login</Button>
+                <Button size="large" fullWidth variant="contained">Login</Button>
             </CardActions>
         </Card>
     </Box>
